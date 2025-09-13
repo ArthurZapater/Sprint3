@@ -252,6 +252,7 @@ ul {
   background-color: var(--color-white);
   color: var(--color-dark);
 
+
 }
 
 .grid-person {
@@ -265,36 +266,30 @@ ul {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  margin: 5rem 10rem;
+  margin: auto 10rem;
 
   & img {
-    width: 10%;
+    width: calc(100vh - 55rem);;
     border-radius: 50%;
     border: solid 2px var(--color-blue);
-    transition: 0.5s;
   }
 }
 
-.flex-img img:hover {
-  scale: 1.2;
-}
 
 .grid-footer {
   font-family: "Orbitron";
   color: var(--color-dark);
   background-color: var(--color-white);
-  height: 40vh;
   display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  grid-template-columns: repeat(4, minmax(auto, 0.1fr));
   padding: 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   place-content: start;
-  gap: 1rem;
-  padding: 1rem 50rem ;
+  gap: 2rem 0;
 
   & img{
-    width: 80%;
+    width: 30%;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -305,24 +300,25 @@ ul {
 }
 
 @media (max-width: 768px) {
-  
+
+
+  .grid-footer {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+  }
 }
 
 @media (max-width: 1024px) {
-  .container-grid {
-  }
 
-  .container-grid-arma {
-  }
+  .grid-videos iframe{
+    scale: 0.8;
 
-  .grid-hardware {
-  }
-
-  .grid-person {
   }
 
   .grid-footer {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
   }
+
+  
 }
 
 @media (max-width: 1280px) {
