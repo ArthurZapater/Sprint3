@@ -86,16 +86,18 @@ ul {
   border-radius: 0.5rem;
 
   & h1 {
-    font-size: 10rem;
+    font-size: 9rem;
     margin: 1rem;
     font-family: "Orbitron";
     letter-spacing: 0.5rem;
   }
 
   & p {
-    margin: 2rem 40rem;
+    margin: 2rem auto;
     text-align: center;
     font-weight: 400;
+    word-break: normal;
+    width: 50rem;
   }
 }
 
@@ -325,7 +327,7 @@ ul {
 
   .container-title{
     & p{
-      padding: 2rem;
+      width: 30rem;
     }
   }
 }
