@@ -94,6 +94,9 @@ ul {
 
   & p {
     margin: 2rem auto;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
     text-align: center;
     font-weight: 400;
     word-break: normal;
