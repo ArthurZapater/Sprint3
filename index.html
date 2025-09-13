@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="pt-br" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wall•E</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <section class="container container-title-img">
+      <header class="container-header">
+        <ul>
+          <li>
+            <a href="#section2">Galeria</a>
+          </li>
+
+          <li>
+            <a href="#section3">Armas</a>
+          </li>
+
+          <li>
+            <a href="#section4">Hardware</a>
+          </li>
+          <li>
+            <a href="#section5">Vídeos</a>
+          </li>
+          <li>
+            <a href="#section6">Grupo</a>
+          </li>
+        </ul>
+      </header>
+
+      <main class="container-title">
+        <h1>WALL•E</h1>
+        <p>
+          O Wall-E da FIAP, criado para a RoboCup, une design nostálgico e
+          tecnologia avançada, mostrando que, mesmo compacto, é determinado e
+          cheio de propósito.
+        </p>
+      </main>
+    </section>
+
+    <div class="flex-galeria">
+      <h2>Galeria de Fotos</h2>
+    <section class="container-grid" id="section2">
+      <div class="container-grid-img">
+        <img src="./images/armaDesativada.jpg" alt="Arma do robô desativada" />
+      </div>
+      <div class="container-grid-img">
+        <img src="./images/rosto.jpg" alt="Face do Robô" />
+      </div>
+      <div class="container-grid-img">
+        <img src="./images/frente.jpg" alt="Parte frontal do robô" />
+      </div>
+      <div class="container-grid-img">
+        <img src="./images/lado.jpg" alt="Lateral do Robô" />
+      </div>
+      <div class="container-grid-img">
+        <img src="./images/traz.jpg" alt="Parte traseira do Robô" />
+      </div>
+      <div class="container-grid-img">
+        <img src="./images/led.jpg" alt="Led do Robô ligado" />
+      </div>
+    </section>
+    </div>
+
+    <section class="container-grid-arma" id="section3">
+      <article class="container-grid-arma-text">
+        <h3>Como o sistema reage ao detectar o oponente</h3>
+        <h2>Mecanismo de Acionamento da Arma</h2>
+        <p>
+          O funcionamento da arma inicia quando o sensor (chave de fim de curso)
+          é ativado. Esse acionamento faz com que o motor DC realize uma rotação
+          de 180°, movimentando o mecanismo que atinge diretamente o balão do
+          robô adversário.
+        </p>
+      </article>
+
+      <article class="container-grid-arma-img">
+        <img src="./images/armaAtivada.jpg" alt="Arma do robô ativa" />
+      </article>
+    </section>
+
+    <section class="grid-hardware" id="section4">
+      <article class="grid-hardware-img">
+        <img src="./images/sistema.jpg" alt="Hardware interno do Robô" />
+      </article>
+
+      <article class="grid-hardware-text">
+
+        <h3>Como nosso Harware funciona?</h3>
+        <p>
+          • O Arduino Mega 2560 é o “cérebro” do robô, coordenando locomoção,
+          sensores e armas. Ele recebe comandos do módulo Bluetooth HC-06 e
+          distribui para cada parte. A energia vem do slot com 6 pilhas AA,
+          enquanto LEDs e a fita LED indicam funcionamento e deixam o design
+          mais visível.
+        </p>
+        <p>
+          • A movimentação é feita por dois motores “amarelinhos” ligados ao
+          shield L293D, que controla sentido e velocidade. As rodas bobas servem
+          de apoio para estabilidade e direção. A chave liga/desliga controla a
+          alimentação vinda das pilhas AA, garantindo que o sistema só funcione
+          quando desejado.
+        </p>
+        <p>
+          • As chaves de fim de curso atuam como sensores para ativar os motores
+          DC 12V das armas. Quando o Arduino detecta o sinal correto, ele libera
+          o acionamento de forma controlada. O LED indicador mostra se o robô
+          está ligado e a fita LED pode sinalizar modos de uso ou apenas
+          customização.
+        </p>
+      </article>
+    </section>
+
+    <section class="grid-videos" id="section5">
+      <h2>Explorar Vídeos</h2>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VjLgzEuITqw?si=xFK8VxXnnmNRA1rG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/pgjCUmNn3Rc?si=-pKJcrysCnAZVzrm"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section class="grid-person" id="section6">
+      <div class="flex-img">
+        <img src="./images/Arthur.jpg" alt="Foto do Arthur" />
+        <article>
+          <h3>Arthur Zapater</h3>
+          <p>arthur.zapater@gmail.com</p>
+        </article>
+      </div>
+
+      <div class="flex-img">
+        <img src="./images/Caio.jpg" alt="Foto do Caio Miron" />
+        <article>
+          <h3>Caio Miron</h3>
+          <p>caio.toledomiron@outlook.com</p>
+        </article>
+      </div>
+
+      <div class="flex-img">
+        <img src="./images/Gabriel.jpg" alt="Foto do Caio Miron" />
+        <article>
+          <h3>Gabriel de Morais</h3>
+          <p>pz.gabrielmorais@gmail.com</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="grid-footer">
+      <h2>WALL•E</h2>
+
+      <img src="./images/instagram.png" alt="instagram Icone" />
+
+      <img src="./images/youtube.png" alt=" Icone Youtube" />
+      
+      <img src="./images/facebook.png" alt="Icone Facebook" />
+    </footer>
+  </body>
+</html>

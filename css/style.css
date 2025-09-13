@@ -1,0 +1,329 @@
+:root {
+  --color-dark: #252422;
+  --color-brown: #403d39;
+  --color-gray: #ccc5b9;
+  --color-white: #fffcf2;
+  --color-orange: #eb5e28;
+  --color-dark-blue: #2b2d42;
+  --color-blue: #8d99ae;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  background-attachment: fixed;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: auto;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li {
+  transition: 0.5s;
+}
+
+li:hover {
+  scale: 110%;
+  color: var(--color-orange);
+}
+
+ul {
+  display: flex;
+}
+
+.container {
+  background-size: contain;
+  height: 100vh;
+  background-attachment: fixed;
+  font-family: "Roboto";
+}
+
+/* Sessão Principal */
+.container-header {
+  padding: 2rem;
+  font-weight: 300;
+  font-size: calc(100vh-10rem);
+
+  & img {
+    max-width: 10%;
+  }
+}
+
+.container-title {
+  color: var(--color-white);
+  margin: 1rem 3rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border-radius: 0.5rem;
+
+  & h1 {
+    font-size: 10rem;
+    margin: 1rem;
+    font-family: "Orbitron";
+    letter-spacing: 0.5rem;
+  }
+
+  & p {
+    margin: 2rem 40rem;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+.container-title-img {
+  background-image: url(/images/Prototipo\ do\ Robô.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Sessão de imagens do robo */
+
+.flex-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  & h2 {
+    font-weight: 300;
+    margin: 3rem;
+  }
+}
+
+.container-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  place-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0rem 30rem;
+}
+
+.container-grid-img {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+.container-grid-img img {
+  width: 100%;
+  transition: 0.8s;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.container-grid-img:hover {
+  scale: 1.05;
+}
+
+/* Sessão da arma do robo */
+.container-grid-arma {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  padding: 10rem 10rem;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.container-grid-arma-text {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  & h2 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+}
+
+.container-grid-arma-img {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container-grid-arma-img img {
+  text-align: center;
+  max-width: 70%;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-grid-arma-img img:hover {
+  scale: 105%;
+}
+
+/* Sessão do sistema do robô */
+
+.grid-hardware {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.grid-hardware-img {
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+.grid-hardware-img img {
+  max-width: 90%;
+  border-radius: 2px;
+}
+
+.grid-hardware-text {
+  padding: 3rem 4rem;
+  font-weight: 400;
+  gap: 4rem;
+
+  & h3 {
+    font-weight: 400;
+  }
+
+  & p {
+    margin: 7rem auto;
+    background-color: var(--color-white);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    color: var(--color-dark);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  & p:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    scale: 110%;
+  }
+}
+
+.grid-videos {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  gap: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+
+}
+
+.grid-person {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(auto, 1fr));
+}
+
+.flex-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem 10rem;
+
+  & img {
+    width: 10%;
+    border-radius: 50%;
+    border: solid 2px var(--color-blue);
+    transition: 0.5s;
+  }
+}
+
+.flex-img img:hover {
+  scale: 1.2;
+}
+
+.grid-footer {
+  font-family: "Orbitron";
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  place-content: start;
+  gap: 1rem;
+  padding: 1rem 50rem ;
+
+  & img{
+    width: 80%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.grid-footer img:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  .container-grid {
+  }
+
+  .container-grid-arma {
+  }
+
+  .grid-hardware {
+  }
+
+  .grid-person {
+  }
+
+  .grid-footer {
+  }
+}
+
+@media (max-width: 1280px) {
+}
