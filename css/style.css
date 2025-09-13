@@ -280,7 +280,7 @@ ul {
   
 
   & img {
-    width: calc(100vh - 55rem);;
+    width: 12%;
     border-radius: 50%;
     border: solid 2px var(--color-blue);
   }
@@ -313,12 +313,19 @@ ul {
 @media (max-width: 768px) {
 
 
+
   .grid-footer {
     grid-template-columns: repeat(1, minmax(auto, 1fr));
   }
 }
 
 @media (max-width: 1024px) {
+
+  .flex-img{
+    img{
+      width: 30%;
+    }
+  }
 
   .container-grid-arma{
     grid-template-columns: 1fr;
