@@ -268,7 +268,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 1rem;
   margin: auto 10rem;
   
@@ -323,7 +323,11 @@ ul {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
   }
 
-  
+  .container-title{
+    & p{
+      padding: 2rem;
+    }
+  }
 }
 
 @media (max-width: 1280px) {
