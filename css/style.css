@@ -207,7 +207,6 @@ ul {
 /* Sessão do sistema do robô */
 
 .grid-hardware {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
 }
@@ -223,6 +222,7 @@ ul {
 }
 
 .grid-hardware-text {
+  margin: 1rem auto;
   padding: 3rem 4rem;
   font-weight: 400;
   gap: 4rem;
@@ -320,6 +320,10 @@ ul {
 }
 
 @media (max-width: 1024px) {
+
+  .grid-hardware {
+  grid-template-columns: 1fr;
+}
 
   .flex-img{
     img{
