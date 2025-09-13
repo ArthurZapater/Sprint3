@@ -245,12 +245,15 @@ ul {
 .grid-videos {
   height: 100vh;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  place-content: center;
+  place-content:center;
   gap: 1rem;
   background-color: var(--color-white);
   color: var(--color-dark);
+  padding-top: 2rem;
+
+  & h2{
+    text-align: center;
+  }
 
 
 }
@@ -265,8 +268,10 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin: auto 10rem;
+  
 
   & img {
     width: calc(100vh - 55rem);;
