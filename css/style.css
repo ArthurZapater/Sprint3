@@ -129,18 +129,15 @@ ul {
 }
 
 .container-grid {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   place-items: center;
   align-content: center;
   justify-content: center;
-  gap: 0;
-  padding: 0rem 30rem;
 }
 
 .container-grid-img {
-  width: 100%;
+  max-width: 40rem;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -340,9 +337,7 @@ ul {
 
   }
 
-  .grid-footer {
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
-  }
+  
 
   .container-title{
     & p{
@@ -352,4 +347,9 @@ ul {
 }
 
 @media (max-width: 1280px) {
+  .grid-footer {
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+  }
+
+
 }
