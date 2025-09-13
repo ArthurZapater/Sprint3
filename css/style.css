@@ -248,17 +248,15 @@ ul {
 .grid-videos {
   height: 100vh;
   display: grid;
-  place-content:center;
+  place-content: center;
   gap: 1rem;
   background-color: var(--color-white);
   color: var(--color-dark);
   padding-top: 2rem;
 
-  & h2{
+  & h2 {
     text-align: center;
   }
-
-
 }
 
 .grid-person {
@@ -274,7 +272,6 @@ ul {
   justify-content: start;
   gap: 1rem;
   margin: auto 10rem;
-  
 
   & img {
     width: 12%;
@@ -282,7 +279,6 @@ ul {
     border: solid 2px var(--color-blue);
   }
 }
-
 
 .grid-footer {
   font-family: "Orbitron";
@@ -296,7 +292,7 @@ ul {
   place-content: start;
   gap: 2rem 0;
 
-  & img{
+  & img {
     width: 30%;
     transition: 0.5s;
     cursor: pointer;
@@ -308,39 +304,32 @@ ul {
 }
 
 @media (max-width: 768px) {
-
-
-
   .grid-footer {
     grid-template-columns: repeat(1, minmax(auto, 1fr));
   }
 }
 
 @media (max-width: 1024px) {
-
   .grid-hardware {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 
-  .flex-img{
-    img{
+  .flex-img {
+    img {
       width: 30%;
     }
   }
 
-  .container-grid-arma{
+  .container-grid-arma {
     grid-template-columns: 1fr;
   }
 
-  .grid-videos iframe{
+  .grid-videos iframe {
     scale: 0.8;
-
   }
 
-  
-
-  .container-title{
-    & p{
+  .container-title {
+    & p {
       width: 30rem;
     }
   }
@@ -350,6 +339,4 @@ ul {
   .grid-footer {
     grid-template-columns: repeat(4, minmax(auto, 1fr));
   }
-
-
 }
