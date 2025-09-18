@@ -1,0 +1,1 @@
+Site desenvolvido para um trabalho da faculdade, voltado ao projeto anual (RoboCup). O objetivo é construir um robô do tipo rover, e a plataforma apresenta seu design, funcionamento, componentes de hardware, além de vídeos e fotos do processo.
